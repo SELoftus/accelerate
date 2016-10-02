@@ -3,6 +3,5 @@
 wp-config.php
 .htaccess
 
-wp-config.php
 wp-content/uploads/
-wp-content/uploads/wp-migrate-db
+wp-content/uploads/wp-migrate-db/index.php
