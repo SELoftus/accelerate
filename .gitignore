@@ -3,4 +3,5 @@
 wp-config.php
 .htaccess
 
-wp-content\plugins\wp-migrate-db\index.php
+wp-migrate-db.php
+wp-config.php
