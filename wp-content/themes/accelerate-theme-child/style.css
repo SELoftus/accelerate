@@ -50,3 +50,29 @@
     color: #45ac9d;
     text-transform: uppercase;
 }
+
+/*Case Studies Page Styles*/
+
+.project-overview {
+    float: left;
+    width: 40%;
+    margin: auto;
+    font-family: 'Montserrat'
+}
+
+.project-overview h1 {
+    color: #000000;
+}
+
+.project-overview h3{
+    font-weight: light;
+}
+.featured-work {
+   float: right;
+   width: 60%;
+   margin: auto;
+}
+
+.featured-work img {
+    align: center;
+}
