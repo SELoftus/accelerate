@@ -22,8 +22,83 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#masthead nav {
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+#masthead ul li {
+    float: left;
+    margin: 0 20px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+#masthead nav ul{
+    overflow: hidden;
+}
+
+#primary-navigation.site-navigation.primary-navigation {
+    float: right;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
+}
+
+.featured-work {
+    width: 100%;
+}
+
+.featured-work h4 {
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.homepage-featured-work {
+    margin: auto;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+ul.homepage-featured-work li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+section.homepage-featured-work h3 {
+    text-align: center;
+}
+
+.individual-featured-work h5 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.individual-featured-work figure {
+    text-align: center;    
+}
+
+.individual-featured-work h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 .blog-post {
@@ -53,11 +128,18 @@
 
 /*Case Studies Page Styles*/
 
-.case-study-sidebar {
+article.case-study {
+    margin: 40px 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.case-study {
+    margin: 40px 0 0;
+}
+aside.case-study-sidebar {
     float: left;
-    width: 40%;
-    margin: auto;
-    font-family: 'Montserrat', 'Open Sans';
+    width: 314px;
+    margin: 0 30px 0 0;
 }
 
 .case-study-sidebar h2 {
@@ -67,12 +149,18 @@
 .case-study-sidebar h5{
     color: #878787;
     font-weight: lighter;
+    font-size: 16px;
 }
 
 .case-study-sidebar h6{
-    color: #000000;
+    font-weight: normal;
 }
-.case-study-images {
+div.case-study-images {
    float: right;
-   width: 60%;
-   margin: auto;
+   width: 606px;
+}
+
+div.case-study-images img {
+    margin-botom: 50px;
+    border: 1 px solid #dddddd;
+}

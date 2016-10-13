@@ -25,6 +25,15 @@
  * @since Accelerate Marketing 1.0
  */
  
+ //Reverse Case Studies Archive order
+function reverse_archive_order ($query ) {
+    
+    if( !is_admin() && $query->is_post_type_archive('case_studies') && $query->is_main_query() ) {
+        $query->set('order', 'ASC');
+    }
+}
+
+add_action( 'pre_get_posts', 'reverse_archive_order' );
  //Custom post types function
  
  function create_custom_post_types() {
@@ -43,7 +52,6 @@
         )
     );
 }
-
 //Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
  ?>
