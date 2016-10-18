@@ -23,9 +23,9 @@
 }
 
 #masthead nav {
-    float: left;
-    margin: 0 10px;
-    overflow: hidden;
+   float: left;
+   margin: 0 10px;
+   overflow: hidden;
    margin-top: 0;
    margin-bottom: 10px;
 }
@@ -129,7 +129,6 @@ section.homepage-featured-work h3 {
 /*Case Studies Page Styles*/
 
 article.case-study {
-    margin: 40px 0 0;
     width: 100%;
     overflow: hidden;
 }
@@ -146,13 +145,13 @@ aside.case-study-sidebar {
     color: #000000;
 }
 
-.case-study-sidebar h5{
+.case-study-sidebar h5 {
     color: #878787;
     font-weight: lighter;
     font-size: 16px;
 }
 
-.case-study-sidebar h6{
+.case-study-sidebar h6 {
     font-weight: normal;
 }
 div.case-study-images {
@@ -161,6 +160,111 @@ div.case-study-images {
 }
 
 div.case-study-images img {
-    margin-botom: 50px;
+    margin-bottom: 50px;
     border: 1 px solid #dddddd;
+}
+
+/*About Page Styles*/
+
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
+    height: 300px;
+    padding-top: 80px;
+}
+
+    /*About Hero Styles*/
+
+div.about-hero {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    max-width: 60%
+}
+
+div.about-hero h2 {
+    font-family: 'Montserrat';
+    line-height: 1.50;
+    font-weight: lighter;
+}
+
+.blurb-color {
+    color: #45ac9d
+}
+
+/* page style for bg image that works full-size for backup
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
+    height: 440px;
+    padding: 1px;
+    margin-bottom: 100px;
+    min-width: 100%;
+}*/
+
+    /*About Services Styles*/
+
+.services {
+    margin-top: 40px;
+}
+/*About Page Services*/
+
+.about-services-posts {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.services-title {
+    text-align: center;
+}
+
+/*.about-services-content {
+    width: 68%;
+    float: left;
+}
+
+.about-services-images {
+    float: left;
+    width: 29%%;
+}*/
+
+.services-post-title {
+  font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.about-services-posts:nth-child(odd) .about-services-images {
+    float:left;
+    margin-right: 3%;
+}
+.about-services-posts:nth-child(even) .about-services-images {
+     float:right;
+     margin-left: 3%;
+}
+
+.about-services-posts:last-child .about-services-images {
+     float:right;
+     margin-left: 3%;
+     padding-bottom: 50px;
+}
+
+.accelerate-footer {
+    width: 100%;
+    display: block;
+	margin: auto;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-color: #dddddd;
+    height: 150px;
+    padding: 0;
+}
+
+.work-with-accelerate {
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.work-with-accelerate span {
+    margin: auto;
+    margin-left: 3%;
 }

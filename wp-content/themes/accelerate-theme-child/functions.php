@@ -25,33 +25,41 @@
  * @since Accelerate Marketing 1.0
  */
  
- //Reverse Case Studies Archive order
-function reverse_archive_order ($query ) {
-    
-    if( !is_admin() && $query->is_post_type_archive('case_studies') && $query->is_main_query() ) {
-        $query->set('order', 'ASC');
-    }
-}
-
-add_action( 'pre_get_posts', 'reverse_archive_order' );
  //Custom post types function
  
- function create_custom_post_types() {
-//create a case study custom post type
-    register_post_type( 'case_studies',
-        array(
-            'labels' => array(
-                'name' => __( 'Case Studies' ),
-                'singular_name' => __( 'Case Study' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 
-                'slug' => 'case-studies' 
-                ),
-        )
-    );
+ function accelerate_create_custom_post_types() {
+
+	register_post_type('case_studies',
+		array(
+			// 'supports' => $supports,
+			'labels' => array(
+				'name' => __( 'Case Studies' ),
+				'singular_name' => __( 'Case Study' ),
+				'add_new_item'  => __( 'Add New Case Study'),
+				'new_item'      => __( 'New Case Study' ),
+				'search_items'  => __( 'Search Case Studies')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'case-studies'
+				),
+			)
+	 );
+	
+	register_post_type('services',
+		array(
+			// 'supports' => $supports,
+			'labels' => array(
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' ),
+                'add_new_item' => __( 'Add new Service'),
+				),
+			'public' => true,
+			'has_archive' => false
+			)
+	 );
 }
-//Hook this custom post type function into the theme
-add_action( 'init', 'create_custom_post_types' );
+// Hook this custom post type function into the theme
+add_action( 'init', 'accelerate_create_custom_post_types' );
  ?>
