@@ -268,3 +268,39 @@ div.about-hero h2 {
     margin: auto;
     margin-left: 3%;
 }
+
+/*Login Page Styles*/
+
+.login-page {
+    background: url("img/Skillcrush_Computer.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+    height: 300px;
+    padding-top: 80px;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.login-hero {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    max-width: 60%
+}
+
+div.login-hero h2 {
+    font-family: 'Montserrat';
+    line-height: 1.50;
+    font-weight: lighter;
+}
+
+label.login-container {
+    display: block;
+    width: 120px;
+    float: left;
+}
+
+input.login-container {
+    display: block;
+    float: right;
+}

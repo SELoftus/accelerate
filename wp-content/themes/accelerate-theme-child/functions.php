@@ -62,4 +62,35 @@
 }
 // Hook this custom post type function into the theme
 add_action( 'init', 'accelerate_create_custom_post_types' );
+
+function my_custom_login() {
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+}
+add_action('login_head', 'my_custom_login');
+
+//Remove the lost password link//
+function remove_lostpassword_text ( $text ) {
+    if ($text == 'Lost your password?'){$text = '';}
+        return $text;
+    }
+add_filter( 'gettext', 'remove_lostpassword_text' );
+
+//change login error message//
+add_filter('login_errors', 'rs_custom_login_error');
+
+function rs_custom_login_error() {
+    return $error = "Oops! Sorry, you have entered the wrong username or password.";
+}
+
+//change the login logo//
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo');
  ?>
