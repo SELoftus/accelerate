@@ -45,6 +45,11 @@
     float: right;
     vertical-align: top;
     margin-top: 0;
+    text-transform: uppercase;
+}
+
+#primary-navigation.site-navigation.primary-navigation ul li.current_page_item > a {
+    font-weight: bold;
 }
 
 img {
@@ -87,7 +92,7 @@ section.homepage-featured-work h3 {
 .individual-featured-work h5 {
     text-align: center;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .individual-featured-work figure {
@@ -124,6 +129,10 @@ section.homepage-featured-work h3 {
     font-weight: bold;
     color: #45ac9d;
     text-transform: uppercase;
+}
+
+.sidebar {
+    width: 25%;
 }
 
 /*Case Studies Page Styles*/
@@ -164,68 +173,101 @@ div.case-study-images img {
     border: 1 px solid #dddddd;
 }
 
-/*About Page Styles*/
+/*Contact Us Form Styles*/
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.nf-form-title {
+  display: none;
+}
+.nf-form-fields-required {
+	display: none;
+}
+.nf-field .nf-field-label label {
+    font-weight: normal;
+    font-size: .9em;
+}
+.nf-field-container.textbox-container.label-above,
+.nf-field-container.email-container.label-above {
+    display: block;
+    width: 49%;
+    float: left;    
+    clear: initial;
+}
+.nf-field-container.email-container.label-above {
+  margin-left: 2%;
+}
+#nf-field-1, #nf-field-2 {
+  height: 40px;
+}
+#nf-field-4 {
+  float: right;
+  color: #FFF;
+  font-family: 'Montserrat', serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #45AC9D;
+  padding: 15px 80px;
+}
+
+/*About Page*/
 
 .about-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
+    background: url("img/taxi-photo.jpg") no-repeat scroll bottom center / cover rgba(0, 0, 0, 0);
     height: 300px;
     padding-top: 80px;
 }
 
-    /*About Hero Styles*/
-
-div.about-hero {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    font-family: 'Montserrat';
-    color: #FFFFFF;
-    max-width: 60%
+.about-hero {
+	text-align:center;
+    width: 75%;
+    margin: auto;
 }
 
-div.about-hero h2 {
-    font-family: 'Montserrat';
-    line-height: 1.50;
-    font-weight: lighter;
+.about-hero h1 {
+	color:white;
+	font-weight:normal;   	
+}
+
+.about-hero h2 {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: normal;
+    margin: 16px 0 80px;
+    line-height: 1.5em;
 }
 
 .blurb-color {
-    color: #45ac9d
+    color: #45ac9d;
 }
 
-/* page style for bg image that works full-size for backup
-.about-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
-    height: 440px;
-    padding: 1px;
-    margin-bottom: 100px;
-    min-width: 100%;
-}*/
-
-    /*About Services Styles*/
-
-.services {
-    margin-top: 40px;
-}
 /*About Page Services*/
 
 .about-services-posts {
   overflow: hidden;
   margin-top: 50px;
+  width: 98%;
 }
+
 .services-title {
     text-align: center;
 }
 
-/*.about-services-content {
+.about-services-content {
     width: 68%;
     float: left;
+    /*clear: initial;
+    margin: 10px 200px 0px 200px;*/
 }
 
 .about-services-images {
     float: left;
-    width: 29%%;
-}*/
+    width: 29%;
+}
 
 .services-post-title {
   font-size: 24px;
@@ -267,40 +309,4 @@ div.about-hero h2 {
 .work-with-accelerate span {
     margin: auto;
     margin-left: 3%;
-}
-
-/*Login Page Styles*/
-
-.login-page {
-    background: url("img/Skillcrush_Computer.jpg") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
-    height: 300px;
-    padding-top: 80px;
-    color: #ffffff;
-    text-align: center;
-}
-
-div.login-hero {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    font-family: 'Montserrat';
-    color: #FFFFFF;
-    max-width: 60%
-}
-
-div.login-hero h2 {
-    font-family: 'Montserrat';
-    line-height: 1.50;
-    font-weight: lighter;
-}
-
-label.login-container {
-    display: block;
-    width: 120px;
-    float: left;
-}
-
-input.login-container {
-    display: block;
-    float: right;
 }

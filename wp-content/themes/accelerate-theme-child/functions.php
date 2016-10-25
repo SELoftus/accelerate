@@ -57,7 +57,7 @@
 				),
 			'public' => true,
 			'has_archive' => false
-			)
+			) 
 	 );
 }
 // Hook this custom post type function into the theme
