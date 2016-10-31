@@ -55,6 +55,7 @@
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 .button {
@@ -141,6 +142,7 @@ article.case-study {
     width: 100%;
     overflow: hidden;
 }
+
 .case-study {
     margin: 40px 0 0;
 }
@@ -306,7 +308,40 @@ div.case-study-images img {
     padding-top: 20px;
     margin: 0 auto;
 }
+
 .work-with-accelerate span {
     margin: auto;
     margin-left: 3%;
+}
+
+/*404 page styles */
+
+.error-page {
+    background: url("img/404.jpg") no-repeat scroll top center / cover rgba(0, 0, 0, 0);
+    height: 358px;
+    padding-top: 80px;
+}
+
+.error-page-hero {
+    text-align:center;
+    width: 75%;
+    margin: auto;
+}
+
+.error-page-hero h1 {
+	color:white;
+	font-weight:normal;   	
+}
+
+.error-page-hero {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: normal;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+.error-text .screen-reader-text {
+    display: none;
 }
