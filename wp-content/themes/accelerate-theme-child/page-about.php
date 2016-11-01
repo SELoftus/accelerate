@@ -50,6 +50,7 @@ get_header(); ?>
             </div>	
 		<?php endwhile; //end of the loop. ?>
 		<?php wp_reset_query(); // resets the altered query back to the original ?>
+    </div>
 </section>
 
 <div class="site-content">
