@@ -93,4 +93,20 @@ function my_login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo');
+
+//Create dynamic sidebar for social media accounts//
+function accelerate_theme_child_widget_init() {
+	
+	register_sidebar( array(
+	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+	    'id' => 'sidebar-2',
+	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h3 class="widget-title">',
+	    'after_title' => '</h3>',
+	) );
+	
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
  ?>
