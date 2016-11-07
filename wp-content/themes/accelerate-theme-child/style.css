@@ -52,6 +52,10 @@
     font-weight: bold;
 }
 
+#primary-navigation.site-navigation.primary-navigation ul li.current-menu-item > a {
+    font-weight: bold;
+}
+
 img {
     max-width: 100%;
     height: auto;
